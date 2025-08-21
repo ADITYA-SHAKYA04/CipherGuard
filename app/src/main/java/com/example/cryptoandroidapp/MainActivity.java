@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         decryptFileButton.setOnClickListener(v -> handleDecryptFile());
 
         updateThemeToggleIcon();
-    } // End of onCreate method
+    }
 
     // Launch Android file picker
     private void launchFilePicker() {
@@ -135,7 +135,6 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
-    // Moved handleCopyOutput() here
     private void handleCopyOutput() {
         String text = outputText.getText().toString();
         android.view.View rootView = findViewById(android.R.id.content);
